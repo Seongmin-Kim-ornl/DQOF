@@ -30,18 +30,39 @@ This repository contains an implementation of **DQOF** for solving large-scale *
 
 
 ## Key Hyperparameters
-### DQAOA
-- **QUBO_size, m**: Problem size (i.e. QUBO size)
-- **sub_n**: Sub-QUBO size
-- **it**: The number of iterations
-- **number of cores**: The number of cores used for DQAOA, which is determined when submitting job via slurm
+### DQOF
+- `problem_size`  
+  Total number of binary variables in the HUBO problem (typically set to `problem_size`).
 
-### AL-DQAOA
-- **optimization_token**: The number of iterations for active learning
-- **DQAOA_iteration**: The number of iterations for DQAOA in active learning
+- `sub_HUBO_size`  
+  Size of each sub-HUBO used in the decomposition.
+
+- `num_sub_HUBOs`  
+  Number of sub-HUBOs generated from the full problem.
+
+- `num_parallel`  
+  Number of DQAOA instances.
+
+- `num_DQAOA_iters`  
+  Number of optimization iterations for the DQOF solver.
+
+> Note: The total number of CPU cores or nodes is specified at job submission time
+> (e.g., via SLURM) and is not hard-coded in the script.
+
+---
+### AL-DQOF (Active Learning + DQOF)
+In addition to the DQOF hyperparameters above, the active learning workflow introduces:
+- `AL_num_iters`  
+  Total number of active learning cycles.
+  
+- `AL_iters`  
+  Active learning iteration counter  
+  (typically initialized to `0`).
+
 
 ## Note
 Qiskit is continuously updated, and the latest versions of qiskit and qiskit-runtime-service may be required for hardware executions.
+
 
 ## Citation
 `@article{kim2024distributed,
