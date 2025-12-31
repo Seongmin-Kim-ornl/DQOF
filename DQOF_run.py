@@ -12,7 +12,7 @@ problem_size = 40
 sub_HUBO_size = 4
 num_sub_HUBOs = problem_size
 num_parallel = 10
-num_DQAOA_iters = 30
+num_DQAOA_iters = 50
 
 if rank == 0:
     tic = time.time()
