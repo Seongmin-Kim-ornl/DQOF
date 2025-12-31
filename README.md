@@ -33,21 +33,21 @@ This repository contains an implementation of **DQOF** for solving large-scale *
 ## Key Hyperparameters
 ### DQOF
 - `problem_size`  
-  Total number of binary variables in the HUBO problem (typically set to `problem_size`).
+  Total number of binary variables in the HUBO problem.
 
 - `sub_HUBO_size`  
   Size of each sub-HUBO used in the decomposition.
 
 - `num_sub_HUBOs`  
-  Number of sub-HUBOs generated from the full problem.
+  Number of sub-HUBOs generated from the original HUBO problem.
 
 - `num_parallel`  
-  Number of DQAOA instances.
+  Number of DQAOA instances, executed in aprallel.
 
 - `num_DQAOA_iters`  
   Number of optimization iterations for the DQOF solver.
 
-> Note: The total number of CPU cores or nodes is specified at job submission time
+> **Note:** The total number of CPU cores or nodes is specified at job submission time
 > (e.g., via SLURM) and is not hard-coded in the script.
 
 ---
@@ -62,7 +62,7 @@ In addition to the DQOF hyperparameters above, the active learning workflow intr
 
 
 ## Note
-Qiskit is continuously updated, and the latest versions of qiskit and qiskit-runtime-service may be required for hardware executions.
+Qiskit is under active development. For hardware execution, the latest versions of `qiskit` and `qiskit-ibm-runtime` may be required.
 
 
 ## Citation
