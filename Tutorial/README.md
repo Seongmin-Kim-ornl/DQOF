@@ -4,8 +4,6 @@ This tutorial provides a minimal, self-contained workflow for running the **Dist
 
 All required scripts, example HUBO instances, datasets, and SLURM submission files are included in this folder.
 
----
-
 ## Overview of Main Scripts
 
 ### `DQOF.py`
@@ -14,15 +12,11 @@ Core implementation of **DQOF** for solving large-scale HUBO problems.
 - Solves sub-HUBOs in parallel using quantum circuits
 - Designed for **multi-core / multi-node HPC execution**
 
----
-
 ### `DQOF_run.py`
 Driver script for running a **DQOF optimization**.
 - Loads HUBO input files
 - Configures decomposition and parallel execution
 - Calls `DQOF.py`
-
----
 
 ### `AL_DQOF_run.py`
 Driver script for **Active Learning + DQOF**.
@@ -32,7 +26,6 @@ Driver script for **Active Learning + DQOF**.
   - Simulation feedback (`sim/`)
 - Updates training data across AL cycles
 
----
 
 ## Checking Required CPU Cores
 
