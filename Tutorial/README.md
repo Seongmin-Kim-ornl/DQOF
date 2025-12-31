@@ -6,30 +6,6 @@ All required scripts, example HUBO instances, datasets, and SLURM submission fil
 
 ---
 
-## Directory Structure
-```text
-Tutorial/
-├── 1_dataset/               # Example datasets for active learning
-├── ML/                      # Machine learning models (e.g., 3rd-order FM)
-├── sim/                     # Numerical solvers (e.g., TMM)
-├── utils/                   # Utility functions
-│
-├── 40_QUBO.txt              # Example QUBO/HUBO instance
-├── 40_k_third.txt           # Example 3rd-order interaction file
-│
-├── DQOF.py                  # Core DQOF implementation
-├── DQOF_run.py              # DQOF execution script (entry point)
-├── AL_DQOF_run.py           # Active-learning with DQOF execution script
-│
-├── submit_DQOF.sl           # SLURM submission script for DQOF
-├── submit_AL_DQOF.sl        # SLURM submission script for AL-DQOF
-│
-├── Check_num_cores.ipynb    # Notebook to estimate required CPU cores
-└── README.md                # This file
-
-
----
-
 ## Overview of Main Scripts
 
 ### `DQOF.py`
@@ -81,3 +57,28 @@ This notebook helps determine:
 ### Step 2: update resource settings in the SLURM scripts: `submit_DQOF.sl` or `submit_AL_DQOF.sl`
 ### Step 3: sbatch the job:
 submit_DQOF.sl or sbatch submit_AL_DQOF.sl
+
+
+
+---
+
+## Directory Structure
+```text
+Tutorial/
+├── 1_dataset/               # Example datasets for active learning
+├── ML/                      # Machine learning models (e.g., 3rd-order FM)
+├── sim/                     # Numerical solvers (e.g., TMM)
+├── utils/                   # Utility functions
+│
+├── 40_QUBO.txt              # Example QUBO/HUBO instance
+├── 40_k_third.txt           # Example 3rd-order interaction file
+│
+├── DQOF.py                  # Core DQOF implementation
+├── DQOF_run.py              # DQOF execution script (entry point)
+├── AL_DQOF_run.py           # Active-learning with DQOF execution script
+│
+├── submit_DQOF.sl           # SLURM submission script for DQOF
+├── submit_AL_DQOF.sl        # SLURM submission script for AL-DQOF
+│
+├── Check_num_cores.ipynb    # Notebook to estimate required CPU cores
+└── README.md                # This file
