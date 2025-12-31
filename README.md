@@ -9,8 +9,9 @@ This repository contains an implementation of **DQOF** for solving large-scale *
 
 ### Usage
 - `DQOF.py`  
-  Core **DQOF** solver.  
-  Requires multi-core and/or multi-node resources; intended for execution on HPC systems.
+  Core **DQOF** solver.
+  Designed for **multi-core and/or multi-node execution** and intended to be run on **HPC systems**.
+ 
 - `AL-DQOF.py`  
   Active learning (AL) pipeline that iteratively integrates:
   - 3rd-order Factorization Machine surrogate modeling (`ML/FM.py`)
