@@ -75,15 +75,15 @@ Qiskit is under active development. For hardware execution, the latest versions 
 ---
 ```text
 ├── Clustering/              # Clustering strategies and representative HUBO instances
-├── Example_AL_dataset/      # Example datasets for AL-DQOF
-├── Examples/                # Example HUBO / QUBO instances
+├── Example_AL_dataset/      # Example datasets for active learning
+├── Examples/                # Example HUBO instances
 ├── ML/                      # Machine learning models (e.g., 3rd-order FM)
 ├── sim/                     # Physics-based solvers (e.g., TMM)
 ├── utils/                   # Utility functions
 │
-├── DQOF.py                  # Core DQOF solver
+├── DQOF.py                  # Core DQOF implementation
 ├── DQOF_run.py              # DQOF execution script (entry point)
-├── AL_DQOF_run.py           # Active-learning DQOF execution script
+├── AL_DQOF_run.py           # Active-learning with DQOF execution script
 │
 ├── requirements.txt         # Python dependencies
 └── README.md                # This file
