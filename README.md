@@ -64,7 +64,6 @@ In addition to the DQOF hyperparameters above, the active learning workflow intr
 ## Note
 Qiskit is under active development. For hardware execution, the latest versions of `qiskit` and `qiskit-ibm-runtime` may be required.
 
-
 ## Citation
 `@article{kim2024distributed,
   title={Distributed Quantum Approximate Optimization Algorithm on a Quantum-Centric Supercomputing Architecture},
@@ -72,3 +71,20 @@ Qiskit is under active development. For hardware execution, the latest versions 
   journal={arXiv preprint arXiv:2407.20212},
   year={2024}
 }`
+
+---
+```text
+├── Clustering/              # Clustering strategies and representative HUBO instances
+├── Example_AL_dataset/      # Example datasets for AL-DQOF
+├── Examples/                # Example HUBO / QUBO instances
+├── ML/                      # Machine learning models (e.g., 3rd-order FM)
+├── sim/                     # Physics-based solvers (e.g., TMM)
+├── utils/                   # Utility functions
+│
+├── DQOF.py                  # Core DQOF solver
+├── DQOF_run.py              # DQOF execution script (entry point)
+├── AL_DQOF_run.py           # Active-learning DQOF execution script
+│
+├── requirements.txt         # Python dependencies
+└── README.md                # This file
+
