@@ -7,7 +7,7 @@ All required scripts, example HUBO instances, datasets, and SLURM submission fil
 ---
 
 ## Directory Structure
-
+```text
 Tutorial/
 ├── 1_dataset/               # Example datasets for active learning
 ├── ML/                      # Machine learning models (e.g., 3rd-order FM)
@@ -80,6 +80,4 @@ This notebook helps determine:
 ### Step 1: edit parameters in: `DQOF_run.py` or `AL_DQOF_run.py`
 ### Step 2: update resource settings in the SLURM scripts: `submit_DQOF.sl` or `submit_AL_DQOF.sl`
 ### Step 3: sbatch the job:
-submit_DQOF.sl
-# or
-sbatch submit_AL_DQOF.sl
+submit_DQOF.sl or sbatch submit_AL_DQOF.sl
