@@ -2,7 +2,7 @@
 
 qiskit==1.4.1
 qiskit-aer==0.15.1
-qiskit-ibm-runtim==0.40.1
+qiskit-ibm-runtime==0.40.1
 qiskit-optimization==0.6.0
 qiskit-algorithms==0.3.1
 mpi4py==4.1.0
