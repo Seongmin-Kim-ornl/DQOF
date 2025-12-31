@@ -11,7 +11,6 @@ This repository contains an implementation of **DQOF** for solving large-scale *
 - `DQOF.py`  
   Core **DQOF** solver.  
   Requires multi-core and/or multi-node resources; intended for execution on HPC systems.
-
 - `AL-DQOF.py`  
   Active learning (AL) pipeline that iteratively integrates:
   - 3rd-order Factorization Machine surrogate modeling (`ML/FM.py`)
@@ -21,12 +20,10 @@ This repository contains an implementation of **DQOF** for solving large-scale *
 ### Data
 - `Examples/`  
   Example HUBO matrices used in this study.
-
 - `Example_AL_dataset/`  
   Example datasets for running the AL-DQOF workflow.
 
 ### Optimization Utilities
-
 - `Clustering/`  
   Clustering-based strategy to improve quantum hardware utilization in DQOF.  
   Includes representative HUBO instances.
