@@ -60,7 +60,7 @@ This notebook helps determine:
 
 
 ---
-
+```text
 ## Directory Structure
 Tutorial/
 ├── 1_dataset/               # Example datasets for active learning
