@@ -65,11 +65,11 @@ In addition to the DQOF hyperparameters above, the active learning workflow intr
 Qiskit is under active development. For hardware execution, the latest versions of `qiskit` and `qiskit-ibm-runtime` may be required.
 
 ## Citation
-`@article{kim2024distributed,
-  title={Distributed Quantum Approximate Optimization Algorithm on a Quantum-Centric Supercomputing Architecture},
-  author={Kim, Seongmin and Pascuzzi, Vincent R and Xu, Zhihao and Luo, Tengfei and Lee, Eungkyu and Suh, In-Saeng},
-  journal={arXiv preprint arXiv:2407.20212},
-  year={2024}
+`@article{kim2026distributed,
+  title={Distributed Quantum Optimization for Large-Scale Higher-Order Problems with Dense Interactions},
+  author={Kim, Seongmin and Pascuzzi, Vincent R and Humble, Travis S and Beck, Thomas and Hwang, Sanghyo and Luo, Tengfei and Lee, Eungkyu and Suh, In-Saeng},
+  journal={arXiv preprint arXiv:2604.20599},
+  year={2026}
 }`
 
 ---
