@@ -32,10 +32,10 @@ queue_elapsed = 0
 queue_time = 0
 iter_count = 0
 
-'''service = QiskitRuntimeService(channel = "ibm_quantum_platform",
-                               instance='crn:v1:bluemix:public:quantum-computing:us-east:a/32cfba68b6dd41419125aad337407aff:b975af02-6a73-4c87-8e0a-21e0aaa5581f::',
-                               token = "hBBNi2ijihDTER51Xiv9IVkkgHVfs-YN8nIX8AwyQIEi",
-                              )'''
+service = QiskitRuntimeService(channel = "<...>",
+                               instance='<...>',
+                               token = "<...>",
+                              )
 
 # retrive a bitstring using quantum computer
 #backend = service.least_busy()
